@@ -25,8 +25,11 @@ export default defineComponent({
     }
   },
   created(){
-    this.nickname =useUserStore().nickname
-    useUserStore().nickname=200
+    
+    let user=useUserStore()
+    user.getUserInfo()
+    this.nickname =user.nickname
+    
   }
   // components: {
   //   HelloWorld

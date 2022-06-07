@@ -1,6 +1,7 @@
 <template>
   <div class="about">
     {{nickname}}
+    
     <!-- <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/> -->
   </div>
@@ -20,8 +21,9 @@ export default defineComponent({
     }
   },
   created(){
-    this.nickname =useUserStore().nickname
     useUserStore().nickname=200
+    this.nickname =useUserStore().nickname
+    
   }
   // components: {
   //   HelloWorld

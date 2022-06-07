@@ -39,6 +39,7 @@ export const useUserStore = defineStore({
      *  获取用户信息（昵称、头像、角色集合、权限集合）
      */
     getUserInfo() {
+      this.nickname =666
       // return new Promise(((resolve) => {
       //     resolve()
       // }))
