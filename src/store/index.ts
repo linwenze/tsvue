@@ -1,9 +1,6 @@
-import useUserStore from "./modules/user";
-// import usePermissionStore from './modules/permission';
+import { createPinia } from 'pinia'
+import piniaPluginPersist from 'pinia-plugin-persist'
+const store = createPinia();
+store.use(piniaPluginPersist);
+export default store
 
-const useStore = () => ({
-  user: useUserStore(),
-  // permission: usePermissionStore(),
-});
-
-export default useStore;
