@@ -1,5 +1,7 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import { createApp } from 'vue';
+import App from './App.vue';
 
-createApp(App).use(router).mount('#app')
+// import 'lib-flexible/flexible.js'
+import router from './router';
+import { Button } from 'vant';
+createApp(App).use(Button).use(router).mount('#app');
